@@ -1,0 +1,50 @@
+Matlab Interface for PL-A8XX/PL-B7XX series cameras (PixeLINK)
+
+This is a MATLAB interface (driver) for PL-A7XX/PL-B7XX series PixeLINK cameras (Firewire). It makes it possible to fully control the openning, closing, parameters setting and image capturing of camera directly with MATLAB.
+
+This work is built on the basis of "MATLAB Interface for Vitana PixeLINK digital camera" that created by M.A.E.Bakker and  L.I.Oei.
+"MATLAB Interface for Vitana PixeLINK digital camera" is originally developed only for the PL-A6XX cameras based on the PixeLink SDK 3.1.
+I adapted it to support the PL-A7XX/PL-B7XX series cameras by making it workable with PixeLink SDK 4.1.
+
+Development environment: Visual C++ 6.0, Matlab R2006a, PixeLink SDK 4.1.
+
+Remember to link libmx.lib, libmex.lib and PxLAPI40.lib.
+
+The following files are in the src directory:
+
+Directories:
+plClose		- contains source file and workspace for plClose
+plDevices	- contains source file and workspace for plDevices
+plGet		- contains source file and workspace for plGet
+plGrab		- contains source file and workspace for plGrab
+plIsOpen	- contains source file and workspace for plIsOpen
+plOpen		- contains source file and workspace for plOpen
+plSet		- contains source file and workspace for plSet
+
+Source files:
+plCreateDeviceHandle.cpp	- auxilairy source file
+plError.cpp			- auxilairy source file
+plGetValue.cpp			- auxilairy source file
+plPrintPossibleValues.cpp	- auxilairy source file
+plSetValue.cpp			- auxilairy source file
+
+Header files:
+plCreateDeviceHandle.h	- header file with plCreateDeviceHandle.cpp
+plError.h		- header file with plError.cpp
+plGetValue.h		- header file with plGetValue.cpp
+plPrintPossibleValues.h	- header file with plPrintPossibleValues.cpp
+plSetValue.h		- header file with plSetValue.cpp
+plTypes.h		- contains #define statements used in other files
+
+The following files are in the bin directory:
+plClose.dll	
+plDevices.dll	
+plGet.dll		
+plGrab.dll	
+plIsOpen.dll	
+plOpen.dll		
+plSet.dll	
+	
+Other Files:
+readme.txt
+
